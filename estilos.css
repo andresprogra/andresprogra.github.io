@@ -323,7 +323,7 @@ img.skill {
 .despedida {
   background: url("img/footer.jpg") right center;
   background-size: cover;
-  padding: 7em;
+  padding: 7em .5em;
 }
 
 .despedida p {
