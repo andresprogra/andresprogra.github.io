@@ -1,0 +1,31 @@
+$green: #16a085;
+$grey: #5A6576;
+$other-grey: #E7ECEE;
+$blue: #058CC5;
+$red: #d2527f;
+$light-blue: #3498DB;
+$white: #FFFFFF;
+$black: #000000;
+$color-branding: #07C2FC;
+
+$colors: (
+	green: $green,
+	grey: $grey,
+	other-grey: $other-grey,
+	blue: $blue,
+	red: $red,
+	light-blue: $light-blue,
+	white: $white,
+	black: $black,
+	branding: $color-branding
+	
+);
+
+@each $color_name,$color in $colors{
+	.#{$color-name}{
+		background-color: $color;
+	}
+	.#{$color-name}-text{
+		color: $color;
+	}
+}

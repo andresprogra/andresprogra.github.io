@@ -1,0 +1,265 @@
+@import 'colors';
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900,300,100italic,100);
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding: 0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.navbar{
+	border-radius: 0px !important;
+	margin-bottom: 0px !important;
+	li{
+		color: black !important;
+	}
+}
+.navbar-brand{
+	padding: 9px 15px;
+}
+
+.container-80{
+	width: 80%;
+}
+.weight-100{
+	font-weight: 100;
+}
+.weight-300{
+	font-weight: 300;
+}
+.weight-400{
+	font-weight: 400;
+}
+.weight-700{
+	font-weight: 700;
+}
+.weight-900{
+	font-weight: 900;
+}
+.big-font{
+	font-size: 4em;
+}
+.int-font{
+	font-size: 1.5em;
+	// color:black;
+}
+.medium-font{
+	font-size: 2.5em;
+}
+.small-font{
+	font-size: 1.2em;
+}
+.background-none{
+	background:none;
+}
+.no-padding{
+	padding: 0;
+}
+hr.brand{
+	border-top: 8px solid #fff;
+	margin: 15px auto;
+	padding: 5px;
+	width: 10%;
+
+}
+hr.hr{
+	border-top: 5px solid #ccc;
+	margin:5px 15px  20px  0;
+	padding: 2px 5px 5px 5px;
+	transition: all 4s;
+	width: 10%;
+}
+.home-banner{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: url("img/home-bg.jpg") center;
+	padding:5em .3em;
+}
+.presentacion{
+	padding: 2em 1em;
+	margin-top: 10em;
+	margin-bottom: 10em;
+	div{
+		margin:2em 0;
+	}
+	p.txt{
+		font-size: 17px;
+	}
+	p.txt:nth-child(1){
+		margin-top:1.5em;
+	}
+	&:hover{
+		.hr{
+			border-top: 5px solid $color-branding;
+			margin:5px 15px  20px  0;
+			padding: 2px 5px 5px 5px;
+			transition: all 3s;
+			width: 100%;
+		}
+	}
+}
+.profile-users{
+	border-radius: 50%;
+}
+
+.servicios{
+	.services{
+		margin:0 auto;
+	}
+	.service{
+		border-radius: 5px;
+		border:1px solid #ccc;
+		margin-bottom: 3em;
+		margin-top:3em;
+		padding:15px;
+		width:100%;
+		.text{
+			padding:10px;
+		}
+		.img{
+			padding: 15px;
+		}
+		.ipad{
+			transform: rotate(-15deg);
+			transition: transform 2s;
+		}
+		.computer{
+			transform: rotate(15deg);
+			transition: transform 2s;
+
+		}
+		&:hover{
+			hr.hr{
+				border-top: 5px solid $color-branding;
+				margin:5px 15px  20px  0;
+				padding: 2px 5px 5px 5px;
+				transition: all 3s;
+				width: 40%;
+			}
+		}
+	}
+}
+#portafolio{
+	margin-bottom: 50px;
+	margin-top: 50px;
+	padding: 0;
+}
+.portafolio{
+	background: url("img/andres-frontend.jpg") no-repeat;
+	min-height: 300px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	&:hover{
+		.screen{
+			top:0%;
+			transition: top 0.5s;		
+		}
+	}
+	.screen{
+		background-color: rgba(0,0,0,0.7);
+		height: 100%;
+		padding: 1em;
+		position: absolute;
+		top: -100%;
+		width: 100%;
+		p:nth-child(1){
+			margin-top: 3em;
+		}
+	}
+}
+.title-portafolio{
+	margin-top:2em;
+}
+.hostingdepago-movil{
+	background: url("img/portafolio/thumb/hostingdepago.png") no-repeat;
+	background-size: cover;
+}
+.compartirpersonal{
+	background: url("img/portafolio/thumb/compartirpersonal.jpg");
+	background-size: cover;
+}
+.metalesprcom{
+	background: url("img/portafolio/thumb/metalesprcom.jpg");
+	background-position: right;
+	background-size: cover;
+}
+.wingoio{
+	background: url("img/portafolio/thumb/wingoio.jpg");
+	background-position: center;
+	background-size: cover;
+}
+.skills{
+	margin-top: 6em;
+	margin-bottom: 6em;
+}
+.conocimiento{
+	margin: 35px auto;
+	&:hover{
+		hr.hr{
+			border-top: 5px solid $color-branding;
+			margin:5px 15px  20px  0;
+			padding: 2px 5px 5px 5px;
+			transition: all 3s;
+			width: 40%;
+		}
+	}
+}
+img.skill{
+	width: 150px;
+}
+.despedida{
+	background: url("img/footer.jpg") right center;
+	// background-attachment: fixed;
+	background-size: cover;
+	padding: 7em;
+	p{
+		text-shadow: 2px 2px 5px #000;
+	}
+}
+footer{
+	padding: 1em;
+	a{
+		margin:auto 10px;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.inline-block{
+	display: inline-block;
+	float: none !important;
+	vertical-align: middle;
+}
+
+@media (max-width: 992px){
+	.profile-users{
+		max-width: 150px;
+	}
+	.presentacion{
+		padding: 2em .4em;
+		margin: 1em auto;
+		p.txt:nth-child(1){
+			margin-top:0em;
+		}
+	}
+	.servicios{
+		.service:nth-child(2){
+			margin-top:0px;
+		}
+		.service{
+			.img img{
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.container-80{
+		width: 100%;
+	}
+
+	.ipad,.computer{
+		transform: rotate(0deg) !important;
+		transition: transform 1s;
+	}
+}
