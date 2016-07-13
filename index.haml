@@ -7,7 +7,9 @@
 		%link{:rel => "stylesheet", :href => "normalize.css"}/
 		%link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"}/
 		%link{:rel => "stylesheet", :href => "estilos.css"}/
+		%link{:rel => "stylesheet", :href => "https://fonts.googleapis.com/css?family=Roboto:400,700,900,300,100italic,100"}/
 		%link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"}/
+		%link{:rel => "stylesheet", :href => "pictonic.css"}/
 		%link{:rel => "icon", :href => "img/favicon-180x180.png"}/
 	%body{class:"desarrollo"}
 		%header{id: "header"}
@@ -31,11 +33,11 @@
 					/ 			%a{:href => "#"} Portafolio
 					/ 		%li
 					/ 			%a{:href => "#"} Contacto
-		.home-banner.white-text.text-center
+		%section.home-banner.white-text.text-center
 			%h1.weight-900.big-font Andrés Domínguez
 			%hr.brand/
 			%h2.weight-300 Desarrollador Web
-		.container.presentacion.container-80
+		%section.container.presentacion.container-80
 			%p.medium-font.weight-700 Estoy listo para ayudarte en tu proyecto.
 			%div
 				.col-xs-12.col-sm-3
@@ -49,7 +51,7 @@
 						y soy Desarrollador web, cuento con la experiencia y habilidad para ayudarte a desarrollar tu idea de negocio en Internet.
 					%p.txt.font-weight-100
 						Lo más importante para mi es desarrollar soluciones tecnológicas que te beneficien a ti y a tu negocio, por ello me he capacitado para resolver problemas con las mejores tecnologías del mercado y ofrecerte un mejor servicio.
-		.container.container-80.servicios
+		%section.container.container-80.servicios
 			%p.medium-font.weight-700 ¿Qué servicios ofrezco?
 			%hr.hr/
 			.col-xs-12
@@ -74,46 +76,75 @@
 								Desarrollaré y plasmaré tu idea en un software real, aplicaré toda la lógica de programación en esta etapa.
 						.img.col-xs-12.col-md-4
 							%img{:src => "img/computer.jpg", :alt => "", :class => "computer img-responsive"}/
-		.container.container-80
+		#mis-trabajos.container.container-80
 			%p.medium-font.weight-700.title-portafolio Algunos de mis trabajos
 			%hr.hr/
-		.container.container-80#portafolio
-			.col-xs-12.col-sm-6.col-md-4.portafolio.hostingdepago-movil
-				.screen.inline-block
-					%p.int-font.white-text.text-center.weight-400 Hosting de pago
-					%p.small-font.white-text.text-center.weight-300 
-						Se desarrolló para
-						%strong
-							Hosting de Pago
-						el sitio web para dispositivos móviles, cumpliendo los requerimientos que dicha empresa solicitó.
+		%section.container.container-80#portafolio
+			%row
+				%article.col-xs-12.col-sm-6.col-md-4.portafolio.hostingdepago-movil
+					%section.stack.inline-block.col-xs-12
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "HTML 5"}
+							%span.icon-html5-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "CSS3"}
+							%span.icon-css3-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "Javascript"}
+							%span.icon-prog-js02
+						/ %p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "Ruby On Rails"}
+						/ 	%span.icon-prog-rails
+					%section.screen.col-xs-12
+						%p.int-font.white-text.text-center.weight-400 Hosting de pago
+						%p.small-font.white-text.text-center.weight-300 
+							Se desarrolló para
+							%strong
+								Hosting de Pago
+							el sitio web para dispositivos móviles, cumpliendo los requerimientos que dicha empresa solicitó.
 
-					/ %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles
-			
-			.col-xs-6.col-sm-6.col-md-4.portafolio.compartirpersonal
-				.screen
-					%p.int-font.white-text.text-center.weight-400 Compartir personal
-					%p.small-font.white-text.text-center.weight-300 Compartir personal, es una Startup mexicana dedicada a ofrecer servicios como Cloud Services, tablero de avisos y reuniones.
-					/ %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles
-			
-			.col-xs-6.col-sm-6.col-md-4.portafolio.metalesprcom
-				.screen
-					%p.int-font.white-text.text-center.weight-400 Metales PR
-					%p.small-font.white-text.text-center.weight-300 
-						Metales Pr es una joyería ubicada en 
-						%strong
-							Puerto Rico
-						, desarrollando para ellos su sitio web donde pueden mostrar su trabajo.
-					/ %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles
-			
-			.col-xs-12.col-sm-6.col-md-4.portafolio.wingoio
-				.screen
-					%p.int-font.white-text.text-center.weight-400 Wingo.io
-					%p.small-font.white-text.text-center.weight-300 
-						%strong
-							Wingo.io
-						es una startup de orígen mexicano con el próposito de ofrecerte publicidad de acuerdo a tu posición geografica, según tus intereses.
-					/ %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles
-		.col-xs-12
+						/ %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles
+				
+				%article.col-xs-6.col-sm-6.col-md-4.portafolio.compartirpersonal
+					%section.stack.inline-block.col-xs-12
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "HTML 5"}
+							%span.icon-html5-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "CSS3"}
+							%span.icon-css3-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "Javascript"}
+							%span.icon-prog-js02
+					%section.screen.col-xs-12
+						%p.int-font.white-text.text-center.weight-400 Compartir personal
+						%p.small-font.white-text.text-center.weight-300 Compartir personal, es una Startup mexicana dedicada a ofrecer servicios como Cloud Services, tablero de avisos y reuniones.
+						/ %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles
+				
+				%article.col-xs-6.col-sm-6.col-md-4.portafolio.metalesprcom
+					%section.stack.inline-block.col-xs-12
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "HTML 5"}
+							%span.icon-html5-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "CSS3"}
+							%span.icon-css3-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "Javascript"}
+							%span.icon-prog-js02
+					%section.screen.col-xs-12
+						%p.int-font.white-text.text-center.weight-400 Metales PR
+						%p.small-font.white-text.text-center.weight-300 
+							Metales Pr es una joyería ubicada en 
+							%strong
+								Puerto Rico
+							, desarrollando para ellos su sitio web donde pueden mostrar su trabajo.
+						/ %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles
+				
+				%article.col-xs-12.col-sm-6.col-md-4.portafolio.wingoio
+					%section.stack.inline-block.col-xs-12
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "HTML 5"}
+							%span.icon-html5-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "CSS3"}
+							%span.icon-css3-02
+					%section.screen.col-xs-12
+						%p.int-font.white-text.text-center.weight-400 Wingo.io
+						%p.small-font.white-text.text-center.weight-300 
+							%strong
+								Wingo.io
+							es una startup de orígen mexicano con el próposito de ofrecerte publicidad de acuerdo a tu posición geografica, según tus intereses.
+						/ %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles
+		%section.col-xs-12
 			.container.container-80.skills
 				%p.medium-font.weight-700.title-portafolio Mis conocimientos
 				%hr.hr/
@@ -161,7 +192,7 @@
 								Ruby on Rails es un framework de Ruby, en el cuál podré manejar toda la lógica de tú aplicación web.
 					
 			
-		.col-xs-12.despedida
+		%section.col-xs-12.despedida
 			.container.container-80
 				%p.medium-font.weight-900.white-text.text-center
 					Estoy para ayudarte en tu proyecto :)
@@ -184,4 +215,4 @@
 					LinkedIn
 		%script{"src" => "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"}
 		%script{"src" => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"}
-
+		%script{"src" => "custom.js"}

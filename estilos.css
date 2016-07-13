@@ -133,12 +133,20 @@ body {
   font-size: 1.2em;
 }
 
+.mini-small-font {
+  font-size: 1em;
+}
+
 .background-none {
   background: none;
 }
 
 .no-padding {
   padding: 0;
+}
+
+.no-margin {
+  margin: 0;
 }
 
 hr.brand {
@@ -248,7 +256,6 @@ hr.hr {
 }
 
 .portafolio {
-  background: url("img/andres-frontend.jpg") no-repeat;
   min-height: 300px;
   overflow: hidden;
   padding: 0;
@@ -260,17 +267,33 @@ hr.hr {
   transition: top 0.5s;
 }
 
+.portafolio:hover .stack {
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 2s;
+}
+
+.portafolio:hover .stack p.title {
+  color: white;
+}
+
+.portafolio:hover .stack p.tech {
+  background: #fafafa;
+  color: #000000;
+  transition: all 1s;
+}
+
 .portafolio .screen {
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 100%;
-  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: calc(100% - 64px);
+  padding: 1.1em;
   position: absolute;
   top: -100%;
-  width: 100%;
+  right: 0;
+  transition: top 0.7s;
 }
 
 .portafolio .screen p:nth-child(1) {
-  margin-top: 3em;
+  padding-top: 2em;
 }
 
 .title-portafolio {
@@ -297,6 +320,35 @@ hr.hr {
   background: url("img/portafolio/thumb/wingoio.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.stack {
+  background: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  padding: 1em 1.3em;
+  position: absolute;
+  transition: all 3s;
+}
+
+.stack p.tech {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 50%;
+  color: #FFFFFF;
+  display: inline-block;
+  float: none !important;
+  font-size: 16px;
+  min-width: 26px;
+  text-align: center;
+}
+
+.stack p.tech span {
+  padding: 5px;
+}
+
+.stack p.tech img {
+  display: inline-block;
+  float: none;
+  max-width: 20px;
 }
 
 .skills {
