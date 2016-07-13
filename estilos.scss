@@ -7,6 +7,21 @@ h1,h2,h3,h4,h5,h6{
 body{
 	font-family: 'Roboto', sans-serif;
 }
+body#portafolio{
+	margin:0;
+	.wingo{
+		padding: 0;
+		background: url("img/portafolio/thumb/wingoio.jpg") no-repeat;
+		background-size: cover;
+		div{
+			background: rgba(0,0,0,0.4);
+			padding:5em .3em;
+		}
+	}
+	.txt{
+		padding:4em 0;
+	}
+}
 .navbar{
 	border-radius: 0px !important;
 	margin-bottom: 0px !important;
@@ -192,6 +207,10 @@ hr.hr{
 }
 .title-portafolio{
 	margin-top:2em;
+}
+.mejores-hosting{
+	background: url("img/portafolio/thumb/mockup-mejores-hosting-hdp.jpg") no-repeat center;
+	background-size: cover;
 }
 .hostingdepago-movil{
 	background: url("img/portafolio/thumb/hostingdepago.png") no-repeat;
