@@ -261,6 +261,19 @@ hr.hr{
 		
 	}
 }
+.testimonios{
+	background: $other-grey;
+	padding: 5em 0;
+	color: $black;
+	h4{
+		margin:1em 0;
+		text-align: center;
+	}
+	article{
+		margin: 0 auto;
+		text-align: center;
+	}
+}
 .skills{
 	margin-top: 6em;
 	margin-bottom: 6em;

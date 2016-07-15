@@ -120,7 +120,7 @@
 								Hosting de Pago
 							el sitio web para dispositivos móviles, cumpliendo los requerimientos que dicha empresa solicitó.
 
-						/ %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles
+						%a.btn.btn-sm.btn-success.text-center{:href => "http://m.hostingdepago.com", :rel => "nofollow", :target => "_blank"} Visitar sitio
 				
 				%article.col-xs-12.col-sm-6.col-md-4.portafolio.compartirpersonal
 					%section.stack.inline-block.col-xs-12
@@ -152,7 +152,7 @@
 							%strong
 								Puerto Rico
 							, desarrollando para ellos su sitio web donde pueden mostrar su trabajo.
-						/ %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles
+						%a.btn.btn-sm.btn-success.text-center{:href => "http://metalespr.com/", :rel => "nofollow", :target => "_blank"} Visitar sitio
 				
 				%article.col-xs-12.col-sm-6.col-md-4.portafolio.wingoio
 					%section.stack.inline-block.col-xs-12
@@ -169,15 +169,26 @@
 								Wingo.io
 							es una startup de orígen mexicano con el próposito de ofrecerte publicidad de acuerdo a tu posición geografica, según tus intereses.
 						%a.btn.btn-sm.btn-success.text-center{:href => "wingo.html"} Detalles
+		%section.col-xs-12.testimonios
+			.container.container-80
+				%h4.weight-700.medium-font Testimonios
+				%article
+					%blockquote.twitter-tweet.tw-align-center{"data-lang" => "en"}
+						%p{:lang => "es"}>
+							%a{:href => "https://twitter.com/andresdguez"} @AndresDguez
+							Excelente FrontEnd cumples las fechas acordadas de entrega y con mucha calidad, excelente trabajar contigo!
+							\&mdash; Luis Gerardo Palacio (@GpalacioL)
+						%a{:href => "https://twitter.com/GpalacioL/status/643270135613009920"} 14 de septiembre de 2015
 		%section.col-xs-12
 			.container.container-80.skills
 				%p.medium-font.weight-700.title-portafolio Mis conocimientos
 				%hr.hr/
+			.container.skills
 				.inline-block
 					.col-xs-6.col-sm-6.col-md-6.conocimiento
-						.col-xs-12.col-sm-5.col-md-5
+						.col-xs-12.col-sm-4.col-md-4
 							%img.img-responsive.skill{:src => "img/html5.svg", :alt => ""}/
-						.col-xs-12.col-sm-5.col-md-7
+						.col-xs-12.col-sm-8.col-md-8
 							%p.int-font.weight-700 HTML 5
 							%hr.hr/
 							%p.small-font.weight-100 
@@ -186,9 +197,9 @@
 									90%
 								de dominio en esta tecnología.
 					.col-xs-6.col-sm-6.col-md-6.conocimiento
-						.col-xs-12.col-sm-5.col-md-5
+						.col-xs-12.col-sm-4.col-md-4
 							%img.img-responsive.skill{:src => "img/css.png", :alt => ""}/
-						.col-xs-12.col-sm-5.col-md-7
+						.col-xs-12.col-sm-8.col-md-8
 							%p.int-font.weight-700 CCS 3 
 							%hr.hr/
 							%p.small-font.weight-100 
@@ -197,9 +208,9 @@
 									70%
 								de CSS, por lo que tu trabajo se verá increíble :)
 					.col-xs-6.col-sm-6.col-md-6.conocimiento
-						.col-xs-12.col-sm-5.col-md-5
+						.col-xs-12.col-sm-4.col-md-4
 							%img.img-responsive.skill{:src => "img/javascript.png", :alt => ""}/
-						.col-xs-12.col-sm-5.col-md-7
+						.col-xs-12.col-sm-8.col-md-8
 							%p.int-font.weight-700 JavaScript
 							%hr.hr/
 							%p.small-font.weight-100 
@@ -208,9 +219,9 @@
 									50%
 								de dominio en JavaScript para la agregar la interactividad de tu sitio web.
 					.col-xs-6.col-sm-6.col-md-6.conocimiento
-						.col-xs-12.col-sm-5.col-md-5
+						.col-xs-12.col-sm-4.col-md-4
 							%img.img-responsive.skill{:src => "img/rubyonrails.png", :alt => ""}/
-						.col-xs-12.col-sm-5.col-md-7
+						.col-xs-12.col-sm-8.col-md-8
 							%p.int-font.weight-700 Ruby On Rails
 							%hr.hr/
 							%p.small-font.weight-100 
@@ -240,4 +251,5 @@
 					LinkedIn
 		%script{"src" => "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"}
 		%script{"src" => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"}
+		%script{:async => "", :charset => "utf-8", :src => "//platform.twitter.com/widgets.js"}	
 		%script{"src" => "custom.js"}

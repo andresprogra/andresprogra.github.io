@@ -375,6 +375,22 @@ hr.hr {
   max-width: 20px;
 }
 
+.testimonios {
+  background: #E7ECEE;
+  padding: 5em 0;
+  color: #000000;
+}
+
+.testimonios h4 {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.testimonios article {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .skills {
   margin-top: 6em;
   margin-bottom: 6em;
