@@ -11,7 +11,8 @@
 		%link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"}/
 		%link{:rel => "stylesheet", :href => "pictonic.css"}/
 		%link{:rel => "icon", :href => "img/favicon-180x180.png"}/
-	%body{class:"desarrollo"}
+		%script{:src => "analytics.js"}
+	%body
 		%header{id: "header"}
 			.navbar.navbar-default.background-none.black-text
 				.container.container-80
@@ -79,9 +80,9 @@
 		#mis-trabajos.container.container-80
 			%p.medium-font.weight-700.title-portafolio Algunos de mis trabajos
 			%hr.hr/
-		%section.container.container-80#portafolio
+		%section#portafolio
 			%row
-				%article.col-xs-12.col-sm-6.col-md-4.portafolio.mejores-hosting
+				%article.col-xs-12.col-sm-6.col-md-6.portafolio.mejores-hosting
 					%section.stack.inline-block.col-xs-12
 						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "HTML 5"}
 							%span.icon-html5-02
@@ -102,7 +103,7 @@
 						%p.small-font.white-text.text-center.weight-300 Mejores Hosting, es una plataforma de comparación de empresas de servidores web.
 
 						/ %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles
-				%article.col-xs-12.col-sm-6.col-md-4.portafolio.hostingdepago-movil
+				%article.col-xs-12.col-sm-6.col-md-3.portafolio.hostingdepago-movil
 					%section.stack.inline-block.col-xs-12
 						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "HTML 5"}
 							%span.icon-html5-02
@@ -122,7 +123,7 @@
 
 						%a.btn.btn-sm.btn-success.text-center{:href => "http://m.hostingdepago.com", :rel => "nofollow", :target => "_blank"} Visitar sitio
 				
-				%article.col-xs-12.col-sm-6.col-md-4.portafolio.compartirpersonal
+				%article.col-xs-12.col-sm-6.col-md-3.portafolio.compartirpersonal
 					%section.stack.inline-block.col-xs-12
 						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "HTML 5"}
 							%span.icon-html5-02
@@ -135,7 +136,7 @@
 						%p.small-font.white-text.text-center.weight-300 Compartir personal, es una Startup mexicana dedicada a ofrecer servicios como Cloud Services, tablero de avisos y reuniones.
 						/ %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles
 				
-				%article.col-xs-12.col-sm-6.col-md-4.portafolio.metalesprcom
+				%article.col-xs-12.col-sm-6.col-md-6.portafolio.metalesprcom
 					%section.stack.inline-block.col-xs-12
 						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "HTML 5"}
 							%span.icon-html5-02
@@ -154,7 +155,7 @@
 							, desarrollando para ellos su sitio web donde pueden mostrar su trabajo.
 						%a.btn.btn-sm.btn-success.text-center{:href => "http://metalespr.com/", :rel => "nofollow", :target => "_blank"} Visitar sitio
 				
-				%article.col-xs-12.col-sm-6.col-md-4.portafolio.wingoio
+				%article.col-xs-12.col-sm-6.col-md-6.portafolio.wingoio
 					%section.stack.inline-block.col-xs-12
 						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "HTML 5"}
 							%span.icon-html5-02

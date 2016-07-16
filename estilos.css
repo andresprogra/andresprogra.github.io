@@ -275,7 +275,7 @@ hr.hr {
 }
 
 .portafolio {
-  min-height: 300px;
+  min-height: 350px;
   overflow: hidden;
   padding: 0;
   position: relative;
@@ -347,7 +347,7 @@ hr.hr {
 }
 
 .stack {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   bottom: 0;
   padding: 1em 1.3em;
   position: absolute;
