@@ -1,4 +1,4 @@
-@import 'colors';
+@import 'colors.scss';
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900,300,100italic,100);
 h1,h2,h3,h4,h5,h6{
 	margin:0;
@@ -22,15 +22,22 @@ body#portafolio{
 		padding:4em 0;
 	}
 }
+.display-none{
+	display: none;
+}
+.display-block{
+	display: block;
+}
 .navbar{
 	border-radius: 0px !important;
 	margin-bottom: 0px !important;
+	min-height: 66px !important;
 	li{
 		color: black !important;
 	}
 }
 .navbar-brand{
-	padding: 9px 15px;
+	padding: 16px 15px;
 }
 
 .container-80{
@@ -293,6 +300,9 @@ hr.hr{
 img.skill{
 	width: 150px;
 }
+#contactForm .field{
+	margin:1em auto;
+}
 .despedida{
 	background: url("img/footer.jpg") right center;
 	// background-attachment: fixed;
@@ -347,3 +357,4 @@ footer{
 		transition: transform 1s;
 	}
 }
+

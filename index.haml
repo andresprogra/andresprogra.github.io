@@ -228,7 +228,25 @@
 							%p.small-font.weight-100 
 								Ruby on Rails es un framework de Ruby, en el cuál podré manejar toda la lógica de tú aplicación web.
 					
-			
+		.section.col-xs-12
+			.row
+				.container.container-80
+					%p.medium-font.weight-700.title-portafolio ¡Contáctame!
+					%hr.hr/
+					%form{:action => "form.php", :method => "post", :id => "contactForm"}
+						.field.al.display-none
+							.alert.alert-success{"role" => "alert"}
+						.field
+							%label{:for => "name"} Tu nombre:
+							%input.form-control{:type => "text", :name => "name", :id => "name"}/
+						.field
+							%label{:for => "email"} Tu email:
+							%input.form-control{:type => "email", :name => "email", :id => "email"}/
+						.field
+							%label{:for => "mensaje"} Mensaje:
+							%textarea.form-control#mensaje{:name => "mensaje", :cols => "30", :rows => "10"}
+						.field
+							%input.btn.btn-md.btn-success{:type => "submit", :value => "Enviar"}/
 		%section.col-xs-12.despedida
 			.container.container-80
 				%p.medium-font.weight-900.white-text.text-center
