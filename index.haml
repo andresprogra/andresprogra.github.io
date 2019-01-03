@@ -1,0 +1,274 @@
+!!!5
+%html
+	%head
+		%title Andrés Domínguez - Desarrollador Web
+		%meta{:charset => "utf-8"}
+		%meta{:name => "viewport", :content => "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"}/
+		%link{:rel => "stylesheet", :href => "normalize.css"}/
+		%link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"}/
+		%link{:rel => "stylesheet", :href => "estilos.css"}/
+		%link{:rel => "stylesheet", :href => "https://fonts.googleapis.com/css?family=Roboto:400,700,900,300,100italic,100"}/
+		%link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"}/
+		%link{:rel => "stylesheet", :href => "pictonic.css"}/
+		%link{:rel => "icon", :href => "img/favicon-180x180.png"}/
+		%script{:src => "analytics.js"}
+	%body
+		%header{id: "header"}
+			.navbar.navbar-default.background-none.black-text
+				.container.container-80
+					.navbar-header
+						/ %button.navbar-toggle.collapsed{"type" => "button", "data-toggle" => "collapse", "data-target" => "#bs-example-navbar-collapse-1", "aria-expanded" => "false"}
+						/ 	%span.sr-only
+						/ 	%span.icon-bar
+						/ 	%span.icon-bar
+						/ 	%span.icon-bar
+						%a.navbar-brand{:href => "/"}
+							%img{:src => "img/logo_negro.png", :alt => "Andrés Domínguez - Desarrollador Web", :class => "img-responsive", :width => "150"}/
+					/ .collapse.navbar-collapse#bs-example-navbar-collapse-1
+					/ 	%ul.nav.navbar-nav.navbar-right
+					/ 		%li
+					/ 			%a{:href => "#"} Inicio
+					/ 		%li
+					/ 			%a{:href => "#"} Servicios
+					/ 		%li
+					/ 			%a{:href => "#"} Portafolio
+					/ 		%li
+					/ 			%a{:href => "#"} Contacto
+		%section.home-banner.white-text.text-center
+			%h1.weight-900.big-font Andrés Domínguez
+			%hr.brand/
+			%h2.weight-300 Desarrollador Web
+		%section.container.presentacion.container-80
+			%p.medium-font.weight-700 Estoy listo para ayudarte en tu proyecto.
+			%div
+				.col-xs-12.col-sm-3
+					%img{:src => "img/andres-frontend.jpg", :alt => "", :class => "img-responsive profile-users center-block"}/
+				.col-xs-12.col-sm-9
+					%hr.hr/
+					%p.txt.font-weight-100
+						Mi nombre es
+						%strong
+							Andrés Domínguez
+						y soy Desarrollador web, cuento con la experiencia y habilidad para ayudarte a desarrollar tu idea de negocio en Internet.
+					%p.txt.font-weight-100
+						Lo más importante para mi es desarrollar soluciones tecnológicas que te beneficien a ti y a tu negocio, por ello me he capacitado para resolver problemas con las mejores tecnologías del mercado y ofrecerte un mejor servicio.
+		%section.container.container-80.servicios
+			%p.medium-font.weight-700 ¿Qué servicios ofrezco?
+			%hr.hr/
+			.col-xs-12
+				.services
+					.service.inline-block
+						.img.col-xs-12.col-md-4
+							%img{:src => "img/ipad-605420_640.jpg", :alt => "",:align => "left", :class => "ipad img-responsive"}/
+						.text.col-xs-12.col-md-8
+							%p.medium-font.weight-700 Diseño web
+							%hr.hr/
+							%p.int-font.weight-100
+								Diseño y estructuro el próximo sitio web que venderá por ti
+								%strong
+									24/7
+								en línea y obtener mayores ganancias.
+
+					.service.inline-block
+						.text.text-right.col-xs-12.col-md-8
+							%p.medium-font.weight-700 Desarrollo web
+							%hr.hr/
+							%p.int-font.weight-100
+								Desarrollaré y plasmaré tu idea en un software real, aplicaré toda la lógica de programación en esta etapa.
+						.img.col-xs-12.col-md-4
+							%img{:src => "img/computer.jpg", :alt => "", :class => "computer img-responsive"}/
+		#mis-trabajos.container.container-80
+			%p.medium-font.weight-700.title-portafolio Algunos de mis trabajos
+			%hr.hr/
+		%section#portafolio
+			%row
+				%article.col-xs-12.col-sm-6.col-md-6.portafolio.mejores-hosting
+					%section.stack.inline-block.col-xs-12
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "HTML 5"}
+							%span.icon-html5-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "CSS3"}
+							%span.icon-css3-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "Javascript"}
+							%span.icon-prog-js02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "Ruby On Rails"}
+							%span.icon-prog-rails
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "Github"}
+							%span.icon-github-01
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "PostgreSQL"}
+							%span.icon-dbs-postgresql
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "Deployment CentOS"}
+							%span.icon-lin-centos
+					%section.screen.col-xs-12
+						%p.int-font.white-text.text-center.weight-400 Mejores Hosting
+						%p.small-font.white-text.text-center.weight-300 Mejores Hosting, es una plataforma de comparación de empresas de servidores web.
+
+						/ %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles
+				%article.col-xs-12.col-sm-6.col-md-3.portafolio.hostingdepago-movil
+					%section.stack.inline-block.col-xs-12
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "HTML 5"}
+							%span.icon-html5-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "CSS3"}
+							%span.icon-css3-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "Javascript"}
+							%span.icon-prog-js02
+						/ %p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "Ruby On Rails"}
+						/ 	%span.icon-prog-rails
+					%section.screen.col-xs-12
+						%p.int-font.white-text.text-center.weight-400 Hosting de pago
+						%p.small-font.white-text.text-center.weight-300 
+							Se desarrolló para
+							%strong
+								Hosting de Pago
+							el sitio web para dispositivos móviles, cumpliendo los requerimientos que dicha empresa solicitó.
+
+						%a.btn.btn-sm.btn-success.text-center{:href => "http://m.hostingdepago.com", :rel => "nofollow", :target => "_blank"} Visitar sitio
+				
+				%article.col-xs-12.col-sm-6.col-md-3.portafolio.compartirpersonal
+					%section.stack.inline-block.col-xs-12
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "HTML 5"}
+							%span.icon-html5-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "CSS3"}
+							%span.icon-css3-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "Javascript"}
+							%span.icon-prog-js02
+					%section.screen.col-xs-12
+						%p.int-font.white-text.text-center.weight-400 Compartir personal
+						%p.small-font.white-text.text-center.weight-300 Compartir personal, es una Startup mexicana dedicada a ofrecer servicios como Cloud Services, tablero de avisos y reuniones.
+						/ %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles
+				
+				%article.col-xs-12.col-sm-6.col-md-6.portafolio.metalesprcom
+					%section.stack.inline-block.col-xs-12
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "HTML 5"}
+							%span.icon-html5-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "CSS3"}
+							%span.icon-css3-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "Javascript"}
+							%span.icon-prog-js02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "PHP"}
+							%span.icon-prog-php01
+					%section.screen.col-xs-12
+						%p.int-font.white-text.text-center.weight-400 Metales PR
+						%p.small-font.white-text.text-center.weight-300 
+							Metales Pr es una joyería ubicada en 
+							%strong
+								Puerto Rico
+							, desarrollando para ellos su sitio web donde pueden mostrar su trabajo.
+						%a.btn.btn-sm.btn-success.text-center{:href => "http://metalespr.com/", :rel => "nofollow", :target => "_blank"} Visitar sitio
+				
+				%article.col-xs-12.col-sm-6.col-md-6.portafolio.wingoio
+					%section.stack.inline-block.col-xs-12
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "HTML 5"}
+							%span.icon-html5-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "CSS3"}
+							%span.icon-css3-02
+						%p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "Github"}
+							%span.icon-github-01
+					%section.screen.col-xs-12
+						%p.int-font.white-text.text-center.weight-400 Wingo.io
+						%p.small-font.white-text.text-center.weight-300 
+							%strong
+								Wingo.io
+							es una startup de orígen mexicano con el próposito de ofrecerte publicidad de acuerdo a tu posición geografica, según tus intereses.
+						%a.btn.btn-sm.btn-success.text-center{:href => "wingo.html"} Detalles
+		%section.col-xs-12.testimonios
+			.container.container-80
+				%h4.weight-700.medium-font Testimonios
+				%article
+					%blockquote.twitter-tweet.tw-align-center{"data-lang" => "en"}
+						%p{:lang => "es"}>
+							%a{:href => "https://twitter.com/andresdguez"} @AndresDguez
+							Excelente FrontEnd cumples las fechas acordadas de entrega y con mucha calidad, excelente trabajar contigo!
+							\&mdash; Luis Gerardo Palacio (@GpalacioL)
+						%a{:href => "https://twitter.com/GpalacioL/status/643270135613009920"} 14 de septiembre de 2015
+		%section.col-xs-12
+			.container.container-80.skills
+				%p.medium-font.weight-700.title-portafolio Mis conocimientos
+				%hr.hr/
+			.container.skills.no-padding
+				.inline-block
+					.col-xs-6.col-sm-6.col-md-6.conocimiento.no-padding
+						.col-xs-12.col-sm-3.col-md-3
+							%img.img-responsive.skill{:src => "img/html5.svg", :alt => ""}/
+						.col-xs-12.col-sm-9.col-md-9
+							%p.int-font.weight-700 HTML 5
+							%hr.hr/
+							%p.small-font.weight-100 
+								Tengo más del
+								%strong
+									90%
+								de dominio en esta tecnología.
+					.col-xs-6.col-sm-6.col-md-6.conocimiento.no-padding
+						.col-xs-12.col-sm-3.col-md-3
+							%img.img-responsive.skill{:src => "img/css.png", :alt => ""}/
+						.col-xs-12.col-sm-9.col-md-9
+							%p.int-font.weight-700 CCS 3 
+							%hr.hr/
+							%p.small-font.weight-100 
+								Domino más del
+								%strong
+									70%
+								de CSS, por lo que tu trabajo se verá increíble :)
+					.col-xs-6.col-sm-6.col-md-6.conocimiento.no-padding
+						.col-xs-12.col-sm-3.col-md-3
+							%img.img-responsive.skill{:src => "img/javascript.png", :alt => ""}/
+						.col-xs-12.col-sm-9.col-md-9
+							%p.int-font.weight-700 JavaScript
+							%hr.hr/
+							%p.small-font.weight-100 
+								Cuento con más del
+								%strong
+									50%
+								de dominio en JavaScript para la agregar la interactividad de tu sitio web.
+					.col-xs-6.col-sm-6.col-md-6.conocimiento.no-padding
+						.col-xs-12.col-sm-3.col-md-3
+							%img.img-responsive.skill{:src => "img/rubyonrails.png", :alt => ""}/
+						.col-xs-12.col-sm-8.col-md-8
+							%p.int-font.weight-700 Ruby On Rails
+							%hr.hr/
+							%p.small-font.weight-100 
+								Ruby on Rails es un framework de Ruby, en el cuál podré manejar toda la lógica de tú aplicación web.
+					
+		.section.col-xs-12
+			.row
+				.container.container-80
+					%p.medium-font.weight-700.title-portafolio ¡Contáctame!
+					%hr.hr/
+					%form{:action => "form.php", :method => "post", :id => "contactForm"}
+						.field.al.display-none
+							.alert.alert-success{"role" => "alert"}
+						.field
+							%label{:for => "name"} Tu nombre:
+							%input.form-control{:type => "text", :name => "name", :id => "name"}/
+						.field
+							%label{:for => "email"} Tu email:
+							%input.form-control{:type => "email", :name => "email", :id => "email"}/
+						.field
+							%label{:for => "mensaje"} Mensaje:
+							%textarea.form-control#mensaje{:name => "mensaje", :cols => "30", :rows => "10"}
+						.field
+							%input.btn.btn-md.btn-success{:type => "submit", :value => "Enviar"}/
+		%section.col-xs-12.despedida
+			.container.container-80
+				%p.medium-font.weight-900.white-text.text-center
+					Estoy para ayudarte en tu proyecto :)
+		%footer.col-xs-12.other-grey
+			.col-xs-12.col-sm-12.text-right.no-padding
+				%a{:href => "https://www.facebook.com/AndresDguezMX"}
+					%span.fa.fa-facebook
+					Facebook
+				%a{:href => "https://twitter.com/andresdguez"}
+					%span.fa.fa-twitter
+					Twitter
+				%a{:href => "https://www.youtube.com/channel/UCJ5OKnovtJpu0WH80_eOTeg"}
+					%span.fa.fa-youtube
+					YouTube
+				%a{:href => "https://github.com/andresprogra"}
+					%span.fa.fa-github
+					Github
+				%a{:href => "https://mx.linkedin.com/in/andresdguez"}
+					%span.fa.fa-linkedin
+					LinkedIn
+		%script{"src" => "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"}
+		%script{"src" => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"}
+		%script{:async => "", :charset => "utf-8", :src => "//platform.twitter.com/widgets.js"}	
+		%script{"src" => "custom.js"}
