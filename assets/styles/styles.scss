@@ -16,6 +16,8 @@ $bgGray: #ebebeb;
   color: white;
   align-items: center;
   &__Position {
+    width: 100%;
+    justify-content: center;
     display: inherit;
     align-items: center;
     margin: 20px auto;
