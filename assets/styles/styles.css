@@ -1,3 +1,6 @@
+.margin-top-30 {
+  margin-top: 30px; }
+
 .HeaderMain {
   height: 350px;
   background: url(../imgs/home-bg.jpg) center no-repeat;
@@ -32,81 +35,151 @@
       border-bottom: 2px solid white;
       width: 130px; }
 
-.Curriculum {
-  height: 100vh; }
-  .Curriculum__Left {
+.Curriculum__Left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #ebebeb;
+  padding: 40px 0; }
+  .Curriculum__Left--avatar {
+    border: 2px solid black;
+    padding: 6px;
+    border-radius: 50%;
+    width: 156px; }
+  .Curriculum__Left--Personal, .Curriculum__Left--Contact {
+    width: 100%; }
+  .Curriculum__Left table {
+    width: 100%; }
+    .Curriculum__Left table tbody tr {
+      border-bottom: 3px solid white; }
+      .Curriculum__Left table tbody tr th {
+        padding-right: 15px; }
+      .Curriculum__Left table tbody tr td {
+        text-align: right;
+        padding: 5px 0 10px 0; }
+
+.Curriculum__Right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 40px 0; }
+  .Curriculum__Right--title {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-bottom: 2px solid black; }
+  .Curriculum__Right--skills {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background: #efefef;
-    height: 100%;
-    padding: 40px 0; }
-    .Curriculum__Left--avatar {
-      border: 2px solid black;
-      padding: 6px;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .Curriculum__Right--skills div {
+      margin: 20px;
+      display: inherit;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
-      width: 156px; }
-    .Curriculum__Left--Personal, .Curriculum__Left--Contact {
-      width: 100%; }
-    .Curriculum__Left table {
-      width: 100%; }
-      .Curriculum__Left table tbody tr {
-        border-bottom: 3px solid white; }
-        .Curriculum__Left table tbody tr th {
-          padding-right: 15px; }
-        .Curriculum__Left table tbody tr td {
-          text-align: right;
-          padding: 5px 0 10px 0; }
-  .Curriculum__Right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 40px 0; }
-    .Curriculum__Right--title {
-      width: 100%;
-      font-weight: bold;
-      font-size: 1.5rem;
-      border-bottom: 2px solid black; }
-    .Curriculum__Right--skills {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+  .Curriculum__Right--works ul {
+    margin-top: 30px; }
+    .Curriculum__Right--works ul li {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-      .Curriculum__Right--skills div {
-        margin: 20px;
-        display: inherit;
+      list-style-type: none; }
+      .Curriculum__Right--works ul li .yearStart {
+        height: 100%;
+        min-width: 100px;
+        max-width: 100px;
+        text-align: center;
+        background: #1cb7e8;
+        padding: 5px 15px;
+        color: white;
+        margin: -15px 30px 0 0;
+        font-size: .8rem; }
+      .Curriculum__Right--works ul li .job {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; }
+        border-left: 1px solid gray;
+        padding: 0 15px 30px 15px; }
+        .Curriculum__Right--works ul li .job::before {
+          position: absolute;
+          content: "";
+          border: 1px solid #1cb7e8;
+          width: 17px;
+          height: 17px;
+          margin-left: -24px;
+          background: #1cb7e8;
+          border-radius: 50%; }
+        .Curriculum__Right--works ul li .job .titleJob {
+          margin: 0;
+          font-weight: bold;
+          text-transform: uppercase; }
+        .Curriculum__Right--works ul li .job ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0; }
+          .Curriculum__Right--works ul li .job ul li {
+            margin: 5px;
+            padding: 5px 10px;
+            background: #ebebeb;
+            font-size: 14px;
+            border-radius: 10px; }
+      .Curriculum__Right--works ul li:last-child {
+        height: 100%; }
+        .Curriculum__Right--works ul li:last-child .job {
+          padding-bottom: 15px; }
+          .Curriculum__Right--works ul li:last-child .job::after {
+            position: relative;
+            content: "";
+            border: 1px solid #1cb7e8;
+            width: 17px;
+            height: 17px;
+            top: 30px;
+            margin-left: -24px;
+            border-radius: 50%; }
 
 .TitleCircle {
   display: inherit;
@@ -164,7 +237,7 @@
     border-style: solid;
     position: absolute;
     top: 0;
-    border-color: green; }
+    border-color: #1cb7e8; }
   .progress .progress-left .progress-bar {
     left: 100%;
     border-top-right-radius: 65px;
@@ -213,143 +286,279 @@
 /* This for loop creates the 	necessary css animation names 
 Due to the split circle of progress-left and progress right, we must use the animations on each side. 
 */
-.progress[data-percentage="10"] .progress-right .progress-bar {
+.progress[data-percentage="5"] .progress-right .progress-bar {
   -webkit-animation: loading-1 1.5s linear forwards;
   animation: loading-1 1.5s linear forwards; }
+
+.progress[data-percentage="5"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+  animation: 0; }
+
+.progress[data-percentage="10"] .progress-right .progress-bar {
+  -webkit-animation: loading-2 1.5s linear forwards;
+  animation: loading-2 1.5s linear forwards; }
 
 .progress[data-percentage="10"] .progress-left .progress-bar {
   -webkit-animation: 0;
   animation: 0; }
 
+.progress[data-percentage="15"] .progress-right .progress-bar {
+  -webkit-animation: loading-3 1.5s linear forwards;
+  animation: loading-3 1.5s linear forwards; }
+
+.progress[data-percentage="15"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+  animation: 0; }
+
 .progress[data-percentage="20"] .progress-right .progress-bar {
-  -webkit-animation: loading-2 1.5s linear forwards;
-  animation: loading-2 1.5s linear forwards; }
+  -webkit-animation: loading-4 1.5s linear forwards;
+  animation: loading-4 1.5s linear forwards; }
 
 .progress[data-percentage="20"] .progress-left .progress-bar {
   -webkit-animation: 0;
   animation: 0; }
 
+.progress[data-percentage="25"] .progress-right .progress-bar {
+  -webkit-animation: loading-5 1.5s linear forwards;
+  animation: loading-5 1.5s linear forwards; }
+
+.progress[data-percentage="25"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+  animation: 0; }
+
 .progress[data-percentage="30"] .progress-right .progress-bar {
-  -webkit-animation: loading-3 1.5s linear forwards;
-  animation: loading-3 1.5s linear forwards; }
+  -webkit-animation: loading-6 1.5s linear forwards;
+  animation: loading-6 1.5s linear forwards; }
 
 .progress[data-percentage="30"] .progress-left .progress-bar {
   -webkit-animation: 0;
   animation: 0; }
 
+.progress[data-percentage="35"] .progress-right .progress-bar {
+  -webkit-animation: loading-7 1.5s linear forwards;
+  animation: loading-7 1.5s linear forwards; }
+
+.progress[data-percentage="35"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+  animation: 0; }
+
 .progress[data-percentage="40"] .progress-right .progress-bar {
-  -webkit-animation: loading-4 1.5s linear forwards;
-  animation: loading-4 1.5s linear forwards; }
+  -webkit-animation: loading-8 1.5s linear forwards;
+  animation: loading-8 1.5s linear forwards; }
 
 .progress[data-percentage="40"] .progress-left .progress-bar {
   -webkit-animation: 0;
   animation: 0; }
 
+.progress[data-percentage="45"] .progress-right .progress-bar {
+  -webkit-animation: loading-9 1.5s linear forwards;
+  animation: loading-9 1.5s linear forwards; }
+
+.progress[data-percentage="45"] .progress-left .progress-bar {
+  -webkit-animation: 0;
+  animation: 0; }
+
 .progress[data-percentage="50"] .progress-right .progress-bar {
-  -webkit-animation: loading-5 1.5s linear forwards;
-  animation: loading-5 1.5s linear forwards; }
+  -webkit-animation: loading-10 1.5s linear forwards;
+  animation: loading-10 1.5s linear forwards; }
 
 .progress[data-percentage="50"] .progress-left .progress-bar {
   -webkit-animation: 0;
   animation: 0; }
 
-.progress[data-percentage="60"] .progress-right .progress-bar {
-  -webkit-animation: loading-5 1.5s linear forwards;
-  animation: loading-5 1.5s linear forwards; }
+.progress[data-percentage="55"] .progress-right .progress-bar {
+  -webkit-animation: loading-10 1.5s linear forwards;
+  animation: loading-10 1.5s linear forwards; }
 
-.progress[data-percentage="60"] .progress-left .progress-bar {
+.progress[data-percentage="55"] .progress-left .progress-bar {
   -webkit-animation: loading-1 1.5s linear forwards 1.5s;
   animation: loading-1 1.5s linear forwards 1.5s; }
 
-.progress[data-percentage="70"] .progress-right .progress-bar {
-  -webkit-animation: loading-5 1.5s linear forwards;
-  animation: loading-5 1.5s linear forwards; }
+.progress[data-percentage="60"] .progress-right .progress-bar {
+  -webkit-animation: loading-10 1.5s linear forwards;
+  animation: loading-10 1.5s linear forwards; }
 
-.progress[data-percentage="70"] .progress-left .progress-bar {
+.progress[data-percentage="60"] .progress-left .progress-bar {
   -webkit-animation: loading-2 1.5s linear forwards 1.5s;
   animation: loading-2 1.5s linear forwards 1.5s; }
 
-.progress[data-percentage="80"] .progress-right .progress-bar {
-  -webkit-animation: loading-5 1.5s linear forwards;
-  animation: loading-5 1.5s linear forwards; }
+.progress[data-percentage="65"] .progress-right .progress-bar {
+  -webkit-animation: loading-10 1.5s linear forwards;
+  animation: loading-10 1.5s linear forwards; }
 
-.progress[data-percentage="80"] .progress-left .progress-bar {
+.progress[data-percentage="65"] .progress-left .progress-bar {
   -webkit-animation: loading-3 1.5s linear forwards 1.5s;
   animation: loading-3 1.5s linear forwards 1.5s; }
 
-.progress[data-percentage="90"] .progress-right .progress-bar {
-  -webkit-animation: loading-5 1.5s linear forwards;
-  animation: loading-5 1.5s linear forwards; }
+.progress[data-percentage="70"] .progress-right .progress-bar {
+  -webkit-animation: loading-10 1.5s linear forwards;
+  animation: loading-10 1.5s linear forwards; }
 
-.progress[data-percentage="90"] .progress-left .progress-bar {
+.progress[data-percentage="70"] .progress-left .progress-bar {
   -webkit-animation: loading-4 1.5s linear forwards 1.5s;
   animation: loading-4 1.5s linear forwards 1.5s; }
 
-.progress[data-percentage="100"] .progress-right .progress-bar {
-  -webkit-animation: loading-5 1.5s linear forwards;
-  animation: loading-5 1.5s linear forwards; }
+.progress[data-percentage="75"] .progress-right .progress-bar {
+  -webkit-animation: loading-10 1.5s linear forwards;
+  animation: loading-10 1.5s linear forwards; }
 
-.progress[data-percentage="100"] .progress-left .progress-bar {
+.progress[data-percentage="75"] .progress-left .progress-bar {
   -webkit-animation: loading-5 1.5s linear forwards 1.5s;
   animation: loading-5 1.5s linear forwards 1.5s; }
+
+.progress[data-percentage="80"] .progress-right .progress-bar {
+  -webkit-animation: loading-10 1.5s linear forwards;
+  animation: loading-10 1.5s linear forwards; }
+
+.progress[data-percentage="80"] .progress-left .progress-bar {
+  -webkit-animation: loading-6 1.5s linear forwards 1.5s;
+  animation: loading-6 1.5s linear forwards 1.5s; }
+
+.progress[data-percentage="85"] .progress-right .progress-bar {
+  -webkit-animation: loading-10 1.5s linear forwards;
+  animation: loading-10 1.5s linear forwards; }
+
+.progress[data-percentage="85"] .progress-left .progress-bar {
+  -webkit-animation: loading-7 1.5s linear forwards 1.5s;
+  animation: loading-7 1.5s linear forwards 1.5s; }
+
+.progress[data-percentage="90"] .progress-right .progress-bar {
+  -webkit-animation: loading-10 1.5s linear forwards;
+  animation: loading-10 1.5s linear forwards; }
+
+.progress[data-percentage="90"] .progress-left .progress-bar {
+  -webkit-animation: loading-8 1.5s linear forwards 1.5s;
+  animation: loading-8 1.5s linear forwards 1.5s; }
+
+.progress[data-percentage="95"] .progress-right .progress-bar {
+  -webkit-animation: loading-10 1.5s linear forwards;
+  animation: loading-10 1.5s linear forwards; }
+
+.progress[data-percentage="95"] .progress-left .progress-bar {
+  -webkit-animation: loading-9 1.5s linear forwards 1.5s;
+  animation: loading-9 1.5s linear forwards 1.5s; }
+
+.progress[data-percentage="100"] .progress-right .progress-bar {
+  -webkit-animation: loading-10 1.5s linear forwards;
+  animation: loading-10 1.5s linear forwards; }
+
+.progress[data-percentage="100"] .progress-left .progress-bar {
+  -webkit-animation: loading-10 1.5s linear forwards 1.5s;
+  animation: loading-10 1.5s linear forwards 1.5s; }
 
 @-webkit-keyframes loading-1 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(36);
-    transform: rotate(36deg); } }
+    -webkit-transform: rotate(18);
+    transform: rotate(18deg); } }
 
 @keyframes loading-1 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(36);
-    transform: rotate(36deg); } }
+    -webkit-transform: rotate(18);
+    transform: rotate(18deg); } }
 
 @-webkit-keyframes loading-2 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(72);
-    transform: rotate(72deg); } }
+    -webkit-transform: rotate(36);
+    transform: rotate(36deg); } }
 
 @keyframes loading-2 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(72);
-    transform: rotate(72deg); } }
+    -webkit-transform: rotate(36);
+    transform: rotate(36deg); } }
 
 @-webkit-keyframes loading-3 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(108);
-    transform: rotate(108deg); } }
+    -webkit-transform: rotate(54);
+    transform: rotate(54deg); } }
 
 @keyframes loading-3 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(108);
-    transform: rotate(108deg); } }
+    -webkit-transform: rotate(54);
+    transform: rotate(54deg); } }
 
 @-webkit-keyframes loading-4 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(144);
-    transform: rotate(144deg); } }
+    -webkit-transform: rotate(72);
+    transform: rotate(72deg); } }
 
 @keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(72);
+    transform: rotate(72deg); } }
+
+@-webkit-keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(90);
+    transform: rotate(90deg); } }
+
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(90);
+    transform: rotate(90deg); } }
+
+@-webkit-keyframes loading-6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(108);
+    transform: rotate(108deg); } }
+
+@keyframes loading-6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(108);
+    transform: rotate(108deg); } }
+
+@-webkit-keyframes loading-7 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(126);
+    transform: rotate(126deg); } }
+
+@keyframes loading-7 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(126);
+    transform: rotate(126deg); } }
+
+@-webkit-keyframes loading-8 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
@@ -357,7 +566,31 @@ Due to the split circle of progress-left and progress right, we must use the ani
     -webkit-transform: rotate(144);
     transform: rotate(144deg); } }
 
-@-webkit-keyframes loading-5 {
+@keyframes loading-8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(144);
+    transform: rotate(144deg); } }
+
+@-webkit-keyframes loading-9 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(162);
+    transform: rotate(162deg); } }
+
+@keyframes loading-9 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(162);
+    transform: rotate(162deg); } }
+
+@-webkit-keyframes loading-10 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
@@ -365,7 +598,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
     -webkit-transform: rotate(180);
     transform: rotate(180deg); } }
 
-@keyframes loading-5 {
+@keyframes loading-10 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
