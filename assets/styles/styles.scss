@@ -1,0 +1,330 @@
+// Variables para las barras de progreso
+$borderWidth: 7px;
+$animationTime: 1.5s;
+$border-color-default: #eee;
+$border-color-fill: #1cb7e8;
+$size: 130px;
+
+$bgGray: #ebebeb;
+.margin-top-30 { margin-top: 30px;}
+.HeaderMain {
+  height: 350px;
+  background:  url(../imgs/home-bg.jpg) center no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  &__Position {
+    display: inherit;
+    align-items: center;
+    margin: 20px auto;
+    h2 {
+      padding: 10px 30px;
+      border: 2px solid white;
+      margin: auto 15px;
+      border-radius: 25px;
+      font-size: 1.6rem;
+    }
+
+    &::before,&::after {
+      content: "";
+      border-bottom: 2px solid white;
+      width: 130px;
+    }
+  }
+}
+
+.Curriculum {
+  &__Left{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: $bgGray;
+    padding: 40px 0;
+    &--avatar {
+      border: 2px solid black;
+      padding: 6px;
+      border-radius: 50%;
+      width: 156px;
+    }
+
+    &--Personal, &--Contact {
+      width: 100%;
+    }
+
+    table {
+      width: 100%;
+      tbody {
+        tr {
+          border-bottom: 3px solid white;
+          th {
+            padding-right: 15px;
+          }
+          td {
+            text-align: right;
+            padding: 5px 0 10px 0;
+          }
+        }
+      }
+    }
+  }
+  &__Right {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    &--title {
+      width: 100%;
+      font-weight: bold;
+      font-size: 1.5rem;
+      border-bottom: 2px solid black
+    }
+    &--skills {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      div {
+        margin: 20px;
+        display: inherit;
+        flex-direction: column;
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+
+      }
+    }
+    &--works {
+      ul {
+        margin-top: 30px;
+        li {
+          display: flex;
+          list-style-type: none;
+          .yearStart {
+            height: 100%;
+            min-width: 100px;
+            max-width: 100px;
+            text-align: center;
+            background: $border-color-fill;
+            padding: 5px 15px;
+            color: white;
+            margin: -15px 30px 0 0;
+            font-size: .8rem;
+          }
+          .job {
+            position: relative;
+            &::before {
+              position: absolute;
+              content: "";
+              border: 1px solid $border-color-fill;
+              width: 17px;
+              height: 17px;
+              margin-left: -24px;
+              // margin-top: 3px;
+              background: $border-color-fill;
+              border-radius: 50%;
+            }
+            display: flex;
+            flex-direction: column;
+            border-left: 1px solid gray;
+            padding: 0 15px 30px 15px;
+            .titleJob {
+              margin:0;
+              font-weight: bold;
+              text-transform: uppercase;
+            }
+            ul {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              margin: 0;
+              padding: 0;
+              li {
+                margin: 5px;
+                padding: 5px 10px;
+                background: $bgGray;
+                font-size: 14px;
+                border-radius: 10px;
+              }
+            }
+          }
+          &:last-child {
+            height: 100%;
+            .job {
+              padding-bottom: 15px;
+              &::after {
+                position: relative;
+                content: "";
+                border: 1px solid $border-color-fill;
+                width: 17px;
+                height: 17px;
+                top: 30px;
+                margin-left: -24px;
+                // background: black;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.TitleCircle {
+  display: inherit;
+  align-items: center;
+  margin: 20px 0;
+  width:100%;
+  p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    width:100%;
+    padding: 5px 10px;
+    border: 2px solid black;
+    margin: auto 15px;
+    border-radius: 25px;
+  }
+  &::before,&::after {
+    content: "";
+    border-bottom: 2px solid black;
+    width: 110px;
+  }
+}
+
+//Create how many steps
+$howManySteps: 20; //this needs to be even. 
+//for fun try using 20 and changine in the HTML the data-percentage to 15 or 85
+
+.progress {
+  width: $size;
+  height: $size;
+  line-height: $size;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: $borderWidth solid $border-color-default;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  > span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .progress-left {
+    left: 0;
+  }
+  .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: $borderWidth;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    border-color: $border-color-fill;
+  }
+  .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: ($size/2);;
+    border-bottom-right-radius: ($size/2);;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+    //animation: loading-2 1.5s linear forwards 1.8s;
+  }
+  .progress-right {
+    right: 0;
+    .progress-bar {
+      left: -100%;
+      border-top-left-radius: ($size/2);;
+      border-bottom-left-radius: ($size/2);;
+      border-right: 0;
+      -webkit-transform-origin: center right;
+      transform-origin: center right;
+      //animation: loading-1 1.8s linear forwards;
+    }
+  }
+  .progress-value {
+    display: flex;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    div {
+      margin-top: 10px;
+    }
+    span {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* This for loop creates the 	necessary css animation names 
+Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+*/
+@for $i from 1 through $howManySteps {
+	$stepName: ($i*(100 / $howManySteps));
+
+	//animation only the left side if below 50%
+	@if $i <= ($howManySteps/2) { 
+		.progress[data-percentage="#{$stepName}"] {
+			.progress-right .progress-bar {
+				 animation: loading-#{$i} $animationTime linear forwards;
+			}
+			.progress-left .progress-bar {animation: 0;}
+		}
+	}
+	//animation only the right side if above 50%
+	@if $i > ($howManySteps/2)  {  
+		.progress[data-percentage="#{$stepName}"] {
+			.progress-right .progress-bar {
+				animation: loading-#{($howManySteps/2)} $animationTime linear forwards; //set the animation to longest animation
+			}
+			.progress-left .progress-bar {
+      animation: loading-#{$i - ($howManySteps/2)} $animationTime linear forwards $animationTime;
+    }
+		}
+	}
+}
+
+//animation
+@for $i from 1 through ($howManySteps/2) { 
+	$degrees: (180/($howManySteps/2));
+	$degrees: ($degrees*$i);
+	@keyframes loading-#{$i}{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate($degrees);
+			transform: rotate(#{$degrees}deg);
+    }
+	}
+}
+//additional styling
+.progress {
+  margin-bottom: 1em;
+}

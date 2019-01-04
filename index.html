@@ -1,384 +1,432 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Andrés Domínguez - Desarrollador Web</title>
-    <meta charset='utf-8'>
-    <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'>
-    <link href='normalize.css' rel='stylesheet'>
-    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet'>
-    <link href='estilos.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,300,100italic,100' rel='stylesheet'>
-    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'>
-    <link href='pictonic.css' rel='stylesheet'>
-    <link href='img/favicon-180x180.png' rel='icon'>
-    <script src='analytics.js'></script>
-  </head>
-  <body>
-    <header id='header'>
-      <div class='navbar navbar-default background-none black-text'>
-        <div class='container container-80'>
-          <div class='navbar-header'>
-            <!-- %button.navbar-toggle.collapsed{"type" => "button", "data-toggle" => "collapse", "data-target" => "#bs-example-navbar-collapse-1", "aria-expanded" => "false"} -->
-            <!-- %span.sr-only -->
-            <!-- %span.icon-bar -->
-            <!-- %span.icon-bar -->
-            <!-- %span.icon-bar -->
-            <a class='navbar-brand' href='/'>
-              <img alt='Andrés Domínguez - Desarrollador Web' class='img-responsive' src='img/logo_negro.png' width='150'>
-            </a>
-          </div>
-          <!-- .collapse.navbar-collapse#bs-example-navbar-collapse-1 -->
-          <!-- %ul.nav.navbar-nav.navbar-right -->
-          <!-- %li -->
-          <!-- %a{:href => "#"} Inicio -->
-          <!-- %li -->
-          <!-- %a{:href => "#"} Servicios -->
-          <!-- %li -->
-          <!-- %a{:href => "#"} Portafolio -->
-          <!-- %li -->
-          <!-- %a{:href => "#"} Contacto -->
-        </div>
-      </div>
-    </header>
-    <section class='home-banner white-text text-center'>
-      <h1 class='weight-900 big-font'>Andrés Domínguez</h1>
-      <hr class='brand'>
-      <h2 class='weight-300'>Desarrollador Web</h2>
-    </section>
-    <section class='container presentacion container-80'>
-      <p class='medium-font weight-700'>Estoy listo para ayudarte en tu proyecto.</p>
-      <div>
-        <div class='col-xs-12 col-sm-3'>
-          <img alt='' class='img-responsive profile-users center-block' src='img/andres-frontend.jpg'>
-        </div>
-        <div class='col-xs-12 col-sm-9'>
-          <hr class='hr'>
-          <p class='txt font-weight-100'>
-            Mi nombre es
-            <strong>
-              Andrés Domínguez
-            </strong>
-            y soy Desarrollador web, cuento con la experiencia y habilidad para ayudarte a desarrollar tu idea de negocio en Internet.
-          </p>
-          <p class='txt font-weight-100'>
-            Lo más importante para mi es desarrollar soluciones tecnológicas que te beneficien a ti y a tu negocio, por ello me he capacitado para resolver problemas con las mejores tecnologías del mercado y ofrecerte un mejor servicio.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class='container container-80 servicios'>
-      <p class='medium-font weight-700'>¿Qué servicios ofrezco?</p>
-      <hr class='hr'>
-      <div class='col-xs-12'>
-        <div class='services'>
-          <div class='service inline-block'>
-            <div class='img col-xs-12 col-md-4'>
-              <img align='left' alt='' class='ipad img-responsive' src='img/ipad-605420_640.jpg'>
-            </div>
-            <div class='text col-xs-12 col-md-8'>
-              <p class='medium-font weight-700'>Diseño web</p>
-              <hr class='hr'>
-              <p class='int-font weight-100'>
-                Diseño y estructuro el próximo sitio web que venderá por ti
-                <strong>
-                  24/7
-                </strong>
-                en línea y obtener mayores ganancias.
-              </p>
-            </div>
-          </div>
-          <div class='service inline-block'>
-            <div class='text text-right col-xs-12 col-md-8'>
-              <p class='medium-font weight-700'>Desarrollo web</p>
-              <hr class='hr'>
-              <p class='int-font weight-100'>
-                Desarrollaré y plasmaré tu idea en un software real, aplicaré toda la lógica de programación en esta etapa.
-              </p>
-            </div>
-            <div class='img col-xs-12 col-md-4'>
-              <img alt='' class='computer img-responsive' src='img/computer.jpg'>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class='container container-80' id='mis-trabajos'>
-      <p class='medium-font weight-700 title-portafolio'>Algunos de mis trabajos</p>
-      <hr class='hr'>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Andrés Domínguez</title>
+  <link rel="stylesheet" href="./assets/styles/styles.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+  <header class="HeaderMain">
+    <!-- <h1>Andrés Domínguez</h1> -->
+    <img src="./assets/imgs/logo_negro.png" width="400" alt="">
+    <div class="HeaderMain__Position">
+      <h2>Programador</h2>
     </div>
-    <section id='portafolio'>
-      <row>
-        <article class='col-xs-12 col-sm-6 col-md-6 portafolio mejores-hosting'>
-          <section class='stack inline-block col-xs-12'>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='HTML 5'>
-              <span class='icon-html5-02'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='CSS3'>
-              <span class='icon-css3-02'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='Javascript'>
-              <span class='icon-prog-js02'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='Ruby On Rails'>
-              <span class='icon-prog-rails'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='Github'>
-              <span class='icon-github-01'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='PostgreSQL'>
-              <span class='icon-dbs-postgresql'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='Deployment CentOS'>
-              <span class='icon-lin-centos'></span>
-            </p>
-          </section>
-          <section class='screen col-xs-12'>
-            <p class='int-font white-text text-center weight-400'>Mejores Hosting</p>
-            <p class='small-font white-text text-center weight-300'>Mejores Hosting, es una plataforma de comparación de empresas de servidores web.</p>
-            <!-- %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles -->
-          </section>
-        </article>
-        <article class='col-xs-12 col-sm-6 col-md-3 portafolio hostingdepago-movil'>
-          <section class='stack inline-block col-xs-12'>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='HTML 5'>
-              <span class='icon-html5-02'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='CSS3'>
-              <span class='icon-css3-02'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='Javascript'>
-              <span class='icon-prog-js02'></span>
-            </p>
-            <!-- %p.tech{"data-toggle" => "tooltip", "data-placement" => "top", "title" => "Ruby On Rails"} -->
-            <!-- %span.icon-prog-rails -->
-          </section>
-          <section class='screen col-xs-12'>
-            <p class='int-font white-text text-center weight-400'>Hosting de pago</p>
-            <p class='small-font white-text text-center weight-300'>
-              Se desarrolló para
-              <strong>
-                Hosting de Pago
-              </strong>
-              el sitio web para dispositivos móviles, cumpliendo los requerimientos que dicha empresa solicitó.
-            </p>
-            <a class='btn btn-sm btn-success text-center' href='http://m.hostingdepago.com' rel='nofollow' target='_blank'>Visitar sitio</a>
-          </section>
-        </article>
-        <article class='col-xs-12 col-sm-6 col-md-3 portafolio compartirpersonal'>
-          <section class='stack inline-block col-xs-12'>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='HTML 5'>
-              <span class='icon-html5-02'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='CSS3'>
-              <span class='icon-css3-02'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='Javascript'>
-              <span class='icon-prog-js02'></span>
-            </p>
-          </section>
-          <section class='screen col-xs-12'>
-            <p class='int-font white-text text-center weight-400'>Compartir personal</p>
-            <p class='small-font white-text text-center weight-300'>Compartir personal, es una Startup mexicana dedicada a ofrecer servicios como Cloud Services, tablero de avisos y reuniones.</p>
-            <!-- %a.btn.btn-sm.btn-success.text-center{:href => "#"} Detalles -->
-          </section>
-        </article>
-        <article class='col-xs-12 col-sm-6 col-md-6 portafolio metalesprcom'>
-          <section class='stack inline-block col-xs-12'>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='HTML 5'>
-              <span class='icon-html5-02'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='CSS3'>
-              <span class='icon-css3-02'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='Javascript'>
-              <span class='icon-prog-js02'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='PHP'>
-              <span class='icon-prog-php01'></span>
-            </p>
-          </section>
-          <section class='screen col-xs-12'>
-            <p class='int-font white-text text-center weight-400'>Metales PR</p>
-            <p class='small-font white-text text-center weight-300'>
-              Metales Pr es una joyería ubicada en
-              <strong>
-                Puerto Rico
-              </strong>
-              , desarrollando para ellos su sitio web donde pueden mostrar su trabajo.
-            </p>
-            <a class='btn btn-sm btn-success text-center' href='http://metalespr.com/' rel='nofollow' target='_blank'>Visitar sitio</a>
-          </section>
-        </article>
-        <article class='col-xs-12 col-sm-6 col-md-6 portafolio wingoio'>
-          <section class='stack inline-block col-xs-12'>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='HTML 5'>
-              <span class='icon-html5-02'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='CSS3'>
-              <span class='icon-css3-02'></span>
-            </p>
-            <p class='tech' data-placement='top' data-toggle='tooltip' title='Github'>
-              <span class='icon-github-01'></span>
-            </p>
-          </section>
-          <section class='screen col-xs-12'>
-            <p class='int-font white-text text-center weight-400'>Wingo.io</p>
-            <p class='small-font white-text text-center weight-300'>
-              <strong>
-                Wingo.io
-              </strong>
-              es una startup de orígen mexicano con el próposito de ofrecerte publicidad de acuerdo a tu posición geografica, según tus intereses.
-            </p>
-            <a class='btn btn-sm btn-success text-center' href='wingo.html'>Detalles</a>
-          </section>
-        </article>
-      </row>
-    </section>
-    <section class='col-xs-12 testimonios'>
-      <div class='container container-80'>
-        <h4 class='weight-700 medium-font'>Testimonios</h4>
-        <article>
-          <blockquote class='twitter-tweet tw-align-center' data-lang='en'><p lang='es'>
-              <a href='https://twitter.com/andresdguez'>@AndresDguez</a>
-              Excelente FrontEnd cumples las fechas acordadas de entrega y con mucha calidad, excelente trabajar contigo!
-              &mdash; Luis Gerardo Palacio (@GpalacioL)
-            </p><a href='https://twitter.com/GpalacioL/status/643270135613009920'>14 de septiembre de 2015</a>
-          </blockquote>
-        </article>
-      </div>
-    </section>
-    <section class='col-xs-12'>
-      <div class='container container-80 skills'>
-        <p class='medium-font weight-700 title-portafolio'>Mis conocimientos</p>
-        <hr class='hr'>
-      </div>
-      <div class='container skills no-padding'>
-        <div class='inline-block'>
-          <div class='col-xs-6 col-sm-6 col-md-6 conocimiento no-padding'>
-            <div class='col-xs-12 col-sm-3 col-md-3'>
-              <img alt='' class='img-responsive skill' src='img/html5.svg'>
-            </div>
-            <div class='col-xs-12 col-sm-9 col-md-9'>
-              <p class='int-font weight-700'>HTML 5</p>
-              <hr class='hr'>
-              <p class='small-font weight-100'>
-                Tengo más del
-                <strong>
-                  90%
-                </strong>
-                de dominio en esta tecnología.
-              </p>
+  </header>
+  <main class="container-fluid Curriculum">
+    <div class="row">
+      <section class="col-xs-12 col-md-12 col-lg-5 col-xl-4 Curriculum__Left">
+        <figure>
+          <img src="./assets/imgs/andres_profile.jpeg" alt="Andrés Domínguez" class="Curriculum__Left--avatar" srcset="">
+        </figure>
+        <div class="TitleCircle">
+          <p class="">Información personal</p>
+        </div>
+        <div class="Curriculum__Left--Personal">
+          <table>
+            <tbody>
+              <tr>
+                <th>Nombre</th>
+                <td>Andrés Domínguez</td>
+              </tr>
+              <tr>
+                <th>Cumpleaños</th>
+                <td>20/05/1999 (19)</td>
+              </tr>
+              <tr>
+                <th>Estado civil</th>
+                <td>Soltero</td>
+              </tr>
+              <tr>
+                <th>Nacionalidad</th>
+                <td>Mexicana</td>
+              </tr>
+              <tr>
+                <th>Oriundo</th>
+                <td>Nuevo Casas Grandes, Chihuahua</td>
+              </tr>
+              <tr>
+                <th>Residencia</th>
+                <td>Guadalajara, Jalisco</td>
+              </tr>
+              <tr>
+                <th>Idiomas</th>
+                <td>Español</td>
+              </tr>
+              <tr>
+                <th>Aprendiendo</th>
+                <td>Inglés, TDD, Aviación</td>
+              </tr>
+              <tr>
+                <th>Pasatiempos</th>
+                <td>Volar, viajar, pueblear, ver series</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="TitleCircle">
+          <p class="">Contácto</p>
+        </div>
+        <div class="Curriculum__Left--Contact">
+          <table>
+            <tbody>
+              <tr>
+                <th>Teléfono</th>
+                <td><a href="tel:+526361171735">(636) 117 17 35</a></td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td><a href="mailto:andresdominguezmx@gmail.com">andresdominguezmx@gmail.com</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="TitleCircle">
+          <p class="">Enlaces</p>
+        </div>
+        <div class="Curriculum__Left--Contact">
+          <table>
+            <tbody>
+                <th>LinkedIn</th>
+                <td><a href="https://www.linkedin.com/in/andresdguez/"><strong>@andresdguez</strong>/</a></td>
+              </tr>
+              <tr>
+                <th>GitHub</th>
+                <td><a href="https://github.com/andresprogra"><strong>@andresprogra</strong></a></td>
+              </tr>
+              <tr>
+                <th>Facebook</th>
+                <td><a href="https://www.facebook.com/AndresDguezMX"><strong>AndresDguezMX</strong></a></td>
+              </tr>
+              <tr>
+                <th>YouTube</th>
+                <td><a href="https://www.youtube.com/channel/UCJ5OKnovtJpu0WH80_eOTeg">Andres Domínguez</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="col-xs-12 col-md-12 col-lg-7 col-xl-8 Curriculum__Right">
+        <p class="Curriculum__Right--title">Perfil</p>
+        <div class="Curriculum__Right--intro">
+          <p>Lo más importante para mi es desarrollar soluciones tecnológicas que te beneficien a ti y a tu empresa, por ello me he capacitado para resolver problemas con las mejores tecnologías del mercado y ofrecerte una mejor solución.</p>
+          <p>Una de mis mejores habilidades es la curva de aprendizaje acelerada para cualquier objetivo, por lo cual sea cual sea la tecnología requerida podré ofrecerte una solución eficaz y sobre todo con altos índices de calidad. Sin embargo, las tecnologías en las que me especializo y tengo experiencia son:</p>
+        </div>
+        <div class="Curriculum__Right--skills">
+          <div class="progress" data-percentage="95">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">
+              <div>
+                95%<br>
+                <span>HTML</span>
+              </div>
             </div>
           </div>
-          <div class='col-xs-6 col-sm-6 col-md-6 conocimiento no-padding'>
-            <div class='col-xs-12 col-sm-3 col-md-3'>
-              <img alt='' class='img-responsive skill' src='img/css.png'>
-            </div>
-            <div class='col-xs-12 col-sm-9 col-md-9'>
-              <p class='int-font weight-700'>CSS 3</p>
-              <hr class='hr'>
-              <p class='small-font weight-100'>
-                Domino más del
-                <strong>
-                  70%
-                </strong>
-                de CSS, por lo que tu trabajo se verá increíble :)
-              </p>
+          <div class="progress" data-percentage="85">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">
+              <div>
+                85%<br>
+                <span>CSS</span>
+              </div>
             </div>
           </div>
-          <div class='col-xs-6 col-sm-6 col-md-6 conocimiento no-padding'>
-            <div class='col-xs-12 col-sm-3 col-md-3'>
-              <img alt='' class='img-responsive skill' src='img/javascript.png'>
-            </div>
-            <div class='col-xs-12 col-sm-9 col-md-9'>
-              <p class='int-font weight-700'>JavaScript</p>
-              <hr class='hr'>
-              <p class='small-font weight-100'>
-                Cuento con más del
-                <strong>
-                  50%
-                </strong>
-                de dominio en JavaScript para la agregar la interactividad de tu sitio web.
-              </p>
+          <div class="progress" data-percentage="85">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">
+              <div>
+                85%<br>
+                <span>JS</span>
+              </div>
             </div>
           </div>
-          <div class='col-xs-6 col-sm-6 col-md-6 conocimiento no-padding'>
-            <div class='col-xs-12 col-sm-3 col-md-3'>
-              <img alt='' class='img-responsive skill' src='img/rubyonrails.png'>
+          <div class="progress" data-percentage="95">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">
+              <div>
+                95%<br>
+                <span>Ruby</span>
+              </div>
             </div>
-            <div class='col-xs-12 col-sm-8 col-md-8'>
-              <p class='int-font weight-700'>Ruby On Rails</p>
-              <hr class='hr'>
-              <p class='small-font weight-100'>
-                Ruby on Rails es un framework de Ruby, en el cuál podré manejar toda la lógica de tú aplicación web.
-              </p>
+          </div>
+          <div class="progress" data-percentage="80">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">
+              <div>
+                80%<br>
+                <span>Golang</span>
+              </div>
+            </div>
+          </div>
+          <div class="progress" data-percentage="70">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">
+              <div>
+                70%<br>
+                <span>React</span>
+              </div>
+            </div>
+          </div>
+          <div class="progress" data-percentage="55">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">
+              <div>
+                55%<br>
+                <span>Android</span>
+              </div>
+            </div>
+          </div>
+          <div class="progress" data-percentage="75">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">
+              <div>
+                75%<br>
+                <span>React Native</span>
+              </div>
+            </div>
+          </div>
+          <div class="progress" data-percentage="45">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">
+              <div>
+                45%<br>
+                <span>TDD</span>
+              </div>
+            </div>
+          </div>
+          <div class="progress" data-percentage="45">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">
+              <div>
+                45%<br>
+                <span>AWS</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--<div class='section col-xs-12'>
-      <div class='row'>
-        <div class='container container-80'>
-          <p class='medium-font weight-700 title-portafolio'>¡Contáctame!</p>
-          <hr class='hr'>
-          <form action='form.php' id='contactForm' method='post'>
-            <div class='field al display-none'>
-              <div class='alert alert-success' role='alert'></div>
-            </div>
-            <div class='field'>
-              <label for='name'>Tu nombre:</label>
-              <input class='form-control' id='name' name='name' type='text'>
-            </div>
-            <div class='field'>
-              <label for='email'>Tu email:</label>
-              <input class='form-control' id='email' name='email' type='email'>
-            </div>
-            <div class='field'>
-              <label for='mensaje'>Mensaje:</label>
-              <textarea class='form-control' cols='30' id='mensaje' name='mensaje' rows='10'></textarea>
-            </div>
-            <div class='field'>
-              <input class='btn btn-md btn-success' type='submit' value='Enviar'>
-            </div>
-          </form>
+        <p class="Curriculum__Right--title margin-top-30">Experiencia laboral</p>
+        <div class="Curriculum__Right--works">
+          <ul>
+            <li>
+              <div class="yearStart">NOV 2018 ACTUAL</div>
+              <div class="job">
+                <p class="titleJob">Don Guspino</p>
+                <ul>
+                  <li>Fullstack developer</li>
+                  <li>Part time</li>
+                  <li>Guadalajara</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="yearStart">JUN 2017 ACTUAL</div>
+              <div class="job">
+                <p class="titleJob">Mousai</p>
+                <ul>
+                  <li>Backend developer</li>
+                  <li>Part time</li>
+                  <li>Ciudad de México</li>
+                  <li>Remoto</li>
+                </ul>
+                <span>Desarrollador de software, implementando soluciones con tecnologías como Ruby on Rails (principalmente), Golang y ReactJS.</span>
+              </div>
+            </li>
+            <li>
+                <div class="yearStart">ENE 2016 JUN 2017</div>
+                <div class="job">
+                  <p class="titleJob">Freelance</p>
+                  <ul>
+                      <li>Independiente</li>
+                      <li>Chihuahua</li>
+                  </ul>
+                  <span>Ofrecer mis servicios profesionales a empresas nacionales e internacionales. Logrando consolidar una marca personal.</span>
+                </div>
+              </li>
+          </ul>
         </div>
-      </div>
-    </div>-->
-    <section class='col-xs-12 despedida'>
-      <div class='container container-80'>
-        <p class='medium-font weight-900 white-text text-center'>
-          Estoy para ayudarte en tu proyecto :)
-        </p>
-      </div>
-    </section>
-    <footer class='col-xs-12 other-grey'>
-      <div class='col-xs-12 col-sm-12 text-right no-padding'>
-        <a href='https://www.facebook.com/AndresDguezMX'>
-          <span class='fa fa-facebook'></span>
-          Facebook
-        </a>
-        <a href='https://twitter.com/soyandresdg'>
-          <span class='fa fa-twitter'></span>
-          Twitter
-        </a>
-        <a href='https://www.youtube.com/channel/UCJ5OKnovtJpu0WH80_eOTeg'>
-          <span class='fa fa-youtube'></span>
-          YouTube
-        </a>
-        <a href='https://github.com/andresprogra'>
-          <span class='fa fa-github'></span>
-          Github
-        </a>
-        <a href='https://mx.linkedin.com/in/andresdguez'>
-          <span class='fa fa-linkedin'></span>
-          LinkedIn
-        </a>
-      </div>
-    </footer>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-    <script async='' charset='utf-8' src='//platform.twitter.com/widgets.js'></script>
-    <script src='custom.js'></script>
-  </body>
+        <p class="Curriculum__Right--title margin-top-30">Participaciones</p>
+        <div class="Curriculum__Right--works">
+          <ul>
+            <li>
+              <div class="yearStart">MAY 2018</div>
+              <div class="job">
+                <p class="titleJob">Taller: Git y GitHub básico</p>
+                <ul>
+                  <li>Docente</li>
+                  <li>Instituto Tecnológico Superior de NCG</li>
+                  <li>Nuevo Casas Grandes, Chihuahua</li>
+                  <li>Duración: 1 día</li>
+                  <li><a href="https://github.com/andresprogra/taller_its">Repositorio del proyecto final</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="yearStart">ENE 2016</div>
+              <div class="job">
+                <p class="titleJob">Taller: Creación de aplicaciones móviles para Android</p>
+                <ul>
+                  <li>Docente</li>
+                  <li>Centro de Bachillerato Tecnológico agropecuario</li>
+                  <li>Casas Grandes, Chihuahua</li>
+                  <li>Duración: 5 meses</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <p class="Curriculum__Right--title margin-top-30">Proyectos en los que he participado</p>
+        <div class="Curriculum__Right--works">
+          <ul>
+            <li>
+              <div class="yearStart">DIC 2018</div>
+              <div class="job">
+                <p class="titleJob">Webhook</p>
+                <ul>
+                  <li>Sinatra</li>
+                </ul>
+                <p class="description">Servicio con la responsabilidad de notificar a través de un request post indicando información relevante del evento ocurrido. De ser el caso que el cliente no respondió de forma correcta, es el delegado de intentar realizar el request de nueva cuenta hasta cumplir con su tarea con éxito.</p>
+              </div>
+            </li>
+            <li>
+              <div class="yearStart">NOV 2018</div>
+              <div class="job">
+                <p class="titleJob">Microservicio subscripciones</p>
+                <ul>
+                  <li>Golang</li>
+                  <li>Stripe</li>
+                </ul>
+                <p class="description">Microservicio diseñado para la administración de subscripciones de un usuario, delegando la responsabilidad de realizar los cobros recurrentes a la tarjeta de crédito/débito del usuario y notificar cada evento a la API central.</p>
+              </div>
+            </li>
+            <li>
+              <div class="yearStart">NOV 2018</div>
+              <div class="job">
+                <p class="titleJob">Gem notifications</p>
+                <ul>
+                  <li>Ruby</li>
+                  <li>Gems</li>
+                </ul>
+                <p class="description">Una gema desarrollada para la administración de notificaciones para usuarios de una aplicación</p>
+              </div>
+            </li>
+            <li>
+              <div class="yearStart">AGO 2018</div>
+              <div class="job">
+                <p class="titleJob">Storage Management</p>
+                <ul>
+                  <li>Ruby</li>
+                  <li>Gems</li>
+                </ul>
+                <p class="description">Gema para la admnistración de almacenamiento para cada usuario de un sistema con la integración de AWS S3. Es posible administrar los archivos de un usuarios en específico y asignarle o removerle espacio de almacenamiento.</p>
+              </div>
+            </li>
+            <li>
+              <div class="yearStart">2017 / 2018</div>
+              <div class="job">
+                <p class="titleJob">Bizgo</p>
+                <ul>
+                  <li>Ruby on Rails</li>
+                  <li>AWS</li>
+                  <li>React Native</li>
+                  <li><a href="https://bizgomexico.com/">Sitio web</a></li>
+                </ul>
+                <p class="description">Una applicación cuyo MVP trataba de enlistar información valiosa de comercios en un perimetro cercano al usuario. La app web fue publicada, pero el app móvil con React Native no vio la luz :(</p>
+              </div>
+            </li>
+            <li>
+              <div class="yearStart">AGO 2017</div>
+              <div class="job">
+                <p class="titleJob">Aplicación bajo contrato de confidencialidad</p>
+                <ul>
+                  <li>Ruby on Rails</li>
+                  <li>ReactJS</li>
+                  <li>AWS</li>
+                  <li>Realtime</li>
+                </ul>
+                <p class="description">Una aplicación web para administración de proyectos, llevando el control de reuniones, acuerdos, validaciones y más</p>
+              </div>
+            </li>
+            <li>
+              <div class="yearStart">JUL 2017</div>
+              <div class="job">
+                <p class="titleJob">Mejores Hosting</p>
+                <ul>
+                  <li>Ruby on Rails</li>
+                  <li><a href="https://www.mejores-hosting.com/">Sitio web</a></li>
+                </ul>
+                <p class="description">Aplicación web para comparar empresas de hosting y sus servicios. Con la posibilidad de agregar comentarios. Integrando un dashboard para el administrador.</p>
+              </div>
+            </li>
+            <li>
+              <div class="yearStart">JUN 2016</div>
+              <div class="job">
+                <p class="titleJob">Trugo App</p>
+                <ul>
+                  <li>Android</li>
+                  <li><a href="https://github.com/andresprogra/Rastreador">Repositorio en GitHub</a></li>
+                  <li>Promo en <a href="https://www.youtube.com/watch?v=QJCXyKX4fq4"> YouTube</a></li>
+                </ul>
+                <p class="description">Una aplicación nativa para Android para realizar el registro de las rutas de los deportistas, guardando información como distancia, tiempo y ruta.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
 </html>
