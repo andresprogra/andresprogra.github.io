@@ -180,7 +180,8 @@
             padding: 5px 10px;
             background: #ebebeb;
             font-size: 14px;
-            border-radius: 10px; }
+            border-radius: 10px;
+            height: auto; }
       .Curriculum__Right--works ul li:last-child {
         height: 100%; }
         .Curriculum__Right--works ul li:last-child .job {
